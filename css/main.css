@@ -9568,12 +9568,243 @@ body .carousel {
   height: 90vh;
 }
 
-body .carousel .header-black {
-  width: 100%;
-  height: 100%;
-}
-
 body .carousel .carousel-inner {
   height: 90vh;
+}
+
+body .section-1-div-1 {
+  height: 90vh;
+  padding: 15vh 0;
+}
+
+body .section-1-div-1 #section-1-col-1 {
+  height: 60vh;
+}
+
+body .section-1-div-1 #section-1-col-1 .col-1-img {
+  height: 45vh;
+  width: 45vh;
+  background-image: url("../img/IMG-20180105.jpg");
+  background-size: 150%;
+  background-position-x: 50%;
+  position: absolute;
+  top: 5vh;
+  left: 10vh;
+  z-index: 1;
+}
+
+body .section-1-div-1 #section-1-col-1 .col-1-back {
+  height: 45vh;
+  width: 45vh;
+  background-color: #D8D8D8;
+  position: absolute;
+  top: 10vh;
+  left: 5vh;
+}
+
+body .section-1-div-1 #section-1-col-2 {
+  height: 60vh;
+  padding: 10vh 4vh;
+  text-align: justify;
+}
+
+body .section-1-div-2 {
+  height: 90vh;
+  padding: 15vh;
+  background-color: #515151;
+}
+
+body .section-1-div-2 #div-2-col-1 {
+  height: 65vh;
+  padding-top: 3vh;
+  background-color: grey;
+}
+
+body .section-1-div-2 #div-2-col-1 .affichage {
+  margin-bottom: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10vh;
+}
+
+body .section-1-div-2 #div-2-col-1 .affichage #btn1 {
+  height: 35px;
+  width: 15%;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border: solid 2px #00AFB4;
+  color: #00AFB4;
+  outline: none !important;
+}
+
+body .section-1-div-2 #div-2-col-1 .affichage #btn1:hover {
+  color: white;
+  background-color: #00AFB4;
+}
+
+body .section-1-div-2 #div-2-col-1 .affichage #btn2 {
+  height: 35px;
+  width: 20%;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border: solid 2px #00AFB4;
+  color: #00AFB4;
+  outline: 5none !important;
+}
+
+body .section-1-div-2 #div-2-col-1 .affichage #btn2:hover {
+  color: white;
+  background-color: #00AFB4;
+}
+
+body .section-1-div-2 #div-2-col-1 .affichage #btn3 {
+  height: 35px;
+  width: 25%;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: solid 2px #00AFB4;
+  color: #00AFB4;
+  outline: none !important;
+}
+
+body .section-1-div-2 #div-2-col-1 .affichage #btn3:hover {
+  color: white;
+  background-color: #00AFB4;
+}
+
+body .section-1-div-2 #div-2-col-1 .div-2-titre {
+  background-color: #00ADB2;
+  color: white;
+  width: 20vh;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage1 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3vh;
+  padding-top: 3vh;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage1::after {
+  content: "";
+  background-color: #00ADB2;
+  width: 0;
+  height: 3px;
+  display: block;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage1:hover::after {
+  width: 95%;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage2 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage2::after {
+  content: "";
+  background-color: #00ADB2;
+  width: 0;
+  height: 3px;
+  display: block;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage2:hover::after {
+  width: 90%;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage3 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage3::after {
+  content: "";
+  background-color: #00ADB2;
+  width: 0;
+  height: 3px;
+  display: block;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage3:hover::after {
+  width: 70%;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage4 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage4::after {
+  content: "";
+  background-color: #00ADB2;
+  width: 0;
+  height: 3px;
+  display: block;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage4:hover::after {
+  width: 85%;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage5 {
+  display: inline-block;
+  width: 100%;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage5::after {
+  content: "";
+  background-color: #00ADB2;
+  width: 0;
+  height: 3px;
+  display: block;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+body .section-1-div-2 #div-2-col-1 .langage5:hover::after {
+  width: 30%;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+h6 .droite1 {
+  margin-left: 84%;
+}
+
+h6 .droite2 {
+  margin-left: 87%;
+}
+
+h6 .droite3 {
+  margin-left: 74.5%;
+}
+
+h6 .droite4 {
+  margin-left: 74%;
+}
+
+h6 .droite5 {
+  margin-left: 72%;
 }
 /*# sourceMappingURL=main.css.map */
