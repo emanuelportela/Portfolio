@@ -38,13 +38,72 @@ body
 
       .carousel-inner
          height: 90vh
+      
+         .img
+            height: 90vh
+            width: 100%
+            background-image: url('../img/Carousel(1).png')
+            background-size: 100%
+            background-position-y: 50%
+            background-position-x: 40%
+            position: absolute
+            top: 0vh
+            left: 0vh
+            z-index: -1
+
+         .black
+            height: 90vh
+            width: 100%
+            background-color: rgba(0,0,0,0.6)
+            position: absolute
+            top: 0vh
+            left: 0vh
+            z-index: 1
+         
+         .text
+            position: absolute
+            top: 30vh
+            left: 20vh
+            color: white
+            z-index: 2
+            font-weight: bold
+            font-size: 30px
+
+         .img2
+            height: 90vh
+            width: 100%
+            background-image: url('../img/Carousel(2).png')
+            background-size: 100%
+            background-position-y: 50%
+            background-position-x: 40%
+            position: absolute
+            top: 0vh
+            left: 0vh
+            z-index: -1
+
+         .black2
+            height: 90vh
+            width: 100%
+            background-color: rgba(0,0,0,0.7)
+            position: absolute
+            top: 0vh
+            left: 0vh
+            z-index: 1
+
+         .text2
+            position: absolute
+            top: 20vh
+            right: 50vh
+            color: white
+            z-index: 2
+            font-weight: bold
+            font-size: 30px
+
 
    .section-1-div-1
-      height: 90vh
-      padding: 15vh 0
 
       #section-1-col-1
-         height: 60vh
+         height: 90vh
 
          .col-1-img
             height: 45vh
@@ -53,7 +112,7 @@ body
             background-size: 150%
             background-position-x: 50%
             position: absolute
-            top: 5vh
+            top: 20vh
             left: 10vh
             z-index: 1
       
@@ -62,175 +121,252 @@ body
             width: 45vh
             background-color: #D8D8D8
             position: absolute
-            top: 10vh
+            top: 25vh
             left: 5vh
 
       #section-1-col-2
-         height: 60vh
-         padding: 10vh 4vh
+         height: 90vh
+         padding: 25vh 4vh
          text-align: justify
    
    .section-1-div-2
-      height: 90vh
-      padding: 15vh
+      padding: 10vh
       background-color: #515151
 
+      .titre-resume
+         display: flex
+         flex-wrap: wrap
+         justify-content: center
+         margin-bottom: 10vh
+         
+         .h2-resume
+            color: white
+            font-weight: bold
+            text-align: center
+            margin-bottom: 4vh
+            align-items: center
+            width: 100%
+         
+         .souligne
+            background-color: #00AFB4
+            height: 3px
+            width: 90px
+
       #div-2-col-1
-         height: 65vh
-         padding-top: 3vh
-         background-color: grey
+         display: flex
+         justify-content: center
 
-         .affichage
-            margin-bottom: 3vh
-            display: flex
-            justify-content: center
-            margin-bottom: 10vh
-            
-            #btn1 
-               height: 35px
-               width: 15%
-               border-radius: 10px
-               padding-left: 10px
-               margin-right: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
-               outline: none !important
-
-
-            #btn1:hover 
-               color: white
-               background-color: #00AFB4
-
-
-            #btn2 
-               height: 35px
-               width: 20%
-               border-radius: 10px
-               padding-left: 10px
-               margin-right: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
-               outline:5none !important
-
-
-            #btn2:hover 
-               color: white
-               background-color: #00AFB4
-
-
-            #btn3 
-               height: 35px
-               width: 25%
-               border-radius: 10px
-               padding-left: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
-               outline: none !important
-
-
-            #btn3:hover 
-               color: white
-               background-color: #00AFB4
+      .container1
+         padding-top: 4vh
+         padding-bottom: 2vh
+         display: flex
+         align-items: flex-start
+         flex-wrap: wrap
+         justify-content: center
+         width: 95%
+         height: 50%
 
          .div-2-titre
             background-color: #00ADB2
             color: white
             width: 20vh
-      
-         .langage1
-            display: inline-block
+            text-align: center
+            margin-bottom: 4vh
+            width: 20vh
+            padding-top: 1vh
+
+         .affichage
+            display: flex
+            justify-content: center
             width: 100%
+            align-items: flex-start
             margin-bottom: 3vh
-            padding-top: 3vh
+            
+            #btn1 
+               height: 35px
+               width: 55px
+               border-radius: 10px
+               margin-right: 10px
+               border: solid 2px #00AFB4
+               color: #00AFB4
+               outline: none !important
 
-         .langage1::after 
-            content: ""
-            background-color: #00ADB2
-            width: 0
-            height: 3px
-            display: block
-            transition: width 2s
+            #btn2 
+               height: 35px
+               width: 90px
+               border-radius: 10px
+               margin-right: 10px
+               border: solid 2px #00AFB4
+               color: #00AFB4
+               outline: none !important
 
-         .langage1:hover::after 
-            width: 95%
 
-         .langage2
-            display: inline-block
+            #btn3 
+               height: 35px
+               width: 110px
+               border-radius: 10px
+               border: solid 2px #00AFB4
+               color: #00AFB4
+               outline: none !important
+            
+         .btn-clique
+            background-color: #00AFB4
+            color: white
+
+         .langages
             width: 100%
-            margin-bottom: 3vh
+            top: 0
 
-         .langage2::after 
-            content: ""
+            .langage1
+               display: inline-block
+               width: 100%
+               margin-bottom: 2vh
+
+            .langage1::after 
+               content: ""
+               background-color: #00ADB2
+               width: 0
+               height: 3px
+               display: block
+               transition: width 2s
+
+            .langage1:hover::after 
+               width: 95%
+
+            .langage2
+               display: inline-block
+               width: 100%
+               margin-bottom: 2vh
+
+            .langage2::after 
+               content: ""
+               background-color: #00ADB2
+               width: 0
+               height: 3px
+               display: block
+               transition: width 2s
+
+            .langage2:hover::after 
+               width: 90%
+
+            .langage3
+               display: inline-block
+               width: 100%
+               margin-bottom: 2vh
+
+            .langage3::after 
+               content: ""
+               background-color: #00ADB2
+               width: 0
+               height: 3px
+               display: block
+               transition: width 2s
+
+            .langage3:hover::after 
+               width: 70%
+
+            .langage4
+               display: inline-block
+               width: 100%
+               margin-bottom: 2vh
+
+            .langage4::after 
+               content: ""
+               background-color: #00ADB2
+               width: 0
+               height: 3px
+               display: block
+               transition: width 2s
+
+            .langage4:hover::after 
+               width: 85%
+
+            .langage5
+               display: inline-block
+               width: 100%
+
+            .langage5::after 
+               content: ""
+               background-color: #00ADB2
+               width: 0
+               height: 3px
+               display: block
+               transition: width 2s
+
+            .langage5:hover::after 
+               width: 30%
+
+            h6
+               font-weight: bold
+         
+            .droite
+               float: right
+
+      .container2
+         padding-top: 4vh
+         padding-bottom: 2vh
+         display: flex
+         align-items: flex-start
+         flex-wrap: wrap
+         justify-content: center
+         
+
+         .div-2-titre-2
             background-color: #00ADB2
-            width: 0
-            height: 3px
-            display: block
-            transition: width 2s
+            color: white
+            width: 20vh
+            text-align: center
+            margin-bottom: 4vh
+            width: 30vh
+            padding-top: 1vh
 
-         .langage2:hover::after 
-            width: 90%
+         .experiences
+            padding: 2vh
 
-         .langage3
-            display: inline-block
-            width: 100%
-            margin-bottom: 3vh
+            .experience1
+               border-bottom: solid 1px white
+               margin-bottom: 3vh
+            
+            .metier
+               color: white
+               font-weight: bold
+               font-size: 20px
+               margin-bottom: 5px
+            
+            .date
+               color: #00AFB4
+               font-weight: bold
+               font-size: 15px
+               margin-bottom: 5px
 
-         .langage3::after 
-            content: ""
-            background-color: #00ADB2
-            width: 0
-            height: 3px
-            display: block
-            transition: width 2s
+   
+   .section-after-1
+      height: 10px
+      width: 100%
+      background-image: url('../img/triangles1.jpeg')
+      background-repeat: repeat
+      margin-top: -1px
 
-         .langage3:hover::after 
-            width: 70%
+   .section-after-2
+      height: 10px
+      width: 100%
+      background-image: url('../img/triangles2.jpeg')
+      background-repeat: repeat
+      margin-bottom: -1px
 
-         .langage4
-            display: inline-block
-            width: 100%
-            margin-bottom: 3vh
 
-         .langage4::after 
-            content: ""
-            background-color: #00ADB2
-            width: 0
-            height: 3px
-            display: block
-            transition: width 2s
+   .section-2
+      height: 100vh
+      background-color: white
 
-         .langage4:hover::after 
-            width: 85%
+   .section-3
+      height: 100vh
+      background-color: #515151
 
-         .langage5
-            display: inline-block
-            width: 100%
+   .section-4
+      height: 100vh
+      background-color: white
 
-         .langage5::after 
-            content: ""
-            background-color: #00ADB2
-            width: 0
-            height: 3px
-            display: block
-            transition: width 2s
-
-         .langage5:hover::after 
-            width: 30%
-
-h6
-   font-weight: bold
-
-   .droite1
-      margin-left: 84%
-
-   .droite2
-      margin-left: 87%
-
-   .droite3
-      margin-left: 74.5%
-
-   .droite4
-      margin-left: 74%
-
-   .droite5
-      margin-left: 72%
+   .section-5
+      height: 20vh
+      background-color: #272727
