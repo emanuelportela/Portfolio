@@ -10,6 +10,9 @@ body
       .header-1
          height: 10vh
          width: 100%
+         background-color: black
+         position: fixed
+         z-index: 3
          
          #header-1-col-1
             height: 10vh
@@ -22,6 +25,7 @@ body
             color: white
             display: flex
             align-items: center
+            font-family: 'Ubuntu Condensed', sans-serif
             
             #col-h-2
                display: flex
@@ -30,11 +34,20 @@ body
                height: 100%
                font-weight: bold
 
+               a
+                  text-decoration: none
+                  color: white
+
             #col-h-2:hover
                color: #219EC8
 
+               a:hover
+                  color: #219EC8
+
    .carousel
       height: 90vh
+      padding-top: 5vh
+      position: relative
 
       .carousel-inner
          height: 90vh
@@ -42,7 +55,7 @@ body
          .img
             height: 90vh
             width: 100%
-            background-image: url('../img/Carousel(1).png')
+            background-image: url('../img/Carousel(2).png')
             background-size: 100%
             background-position-y: 50%
             background-position-x: 40%
@@ -60,7 +73,7 @@ body
             left: 0vh
             z-index: 1
          
-         .text
+         /*.text
             position: absolute
             top: 30vh
             left: 20vh
@@ -70,13 +83,13 @@ body
             font-size: 30px
 
             .span-blue
-               color: #00ADB2
+               color: #00ADB2*/
 
 
          .img2
             height: 90vh
             width: 100%
-            background-image: url('../img/Carousel(2).png')
+            background-image: url('../img/Carousel(1).png')
             background-size: 100%
             background-position-y: 50%
             background-position-x: 40%
@@ -94,7 +107,7 @@ body
             left: 0vh
             z-index: 1
 
-         .text2
+         /*.text2
             position: absolute
             top: 20vh
             right: 50vh
@@ -104,8 +117,20 @@ body
             font-size: 30px
          
             .span-blue
-               color: #00ADB2
+               color: #00ADB2*/
 
+      .iam
+         position: absolute
+         top: 50vh
+         right: 25vh
+         color: white
+         z-index: 3
+         font-size: 40px
+         font-family: 'Lobster', cursive
+         
+         .span-blue
+            color: #00ADB2
+         
    .section-1-div-1
 
       #section-1-col-1
@@ -144,14 +169,15 @@ body
          flex-wrap: wrap
          justify-content: center
          margin-bottom: 10vh
+         font-family: 'Lobster', cursive
          
          .h2-resume
             color: white
-            font-weight: bold
             text-align: center
             margin-bottom: 4vh
             align-items: center
             width: 100%
+            font-size: 40px
          
          .souligne
             background-color: #00AFB4
@@ -161,6 +187,7 @@ body
       #div-2-col-1
          display: flex
          justify-content: center
+         height: 50vh
 
       .container1
          padding-top: 4vh
@@ -171,6 +198,7 @@ body
          justify-content: center
          width: 95%
          height: 50%
+         padding-right: 3vh
 
          .div-2-titre
             background-color: #00ADB2
@@ -178,55 +206,59 @@ body
             width: 20vh
             text-align: center
             margin-bottom: 4vh
-            width: 20vh
+            width: 120px
             padding-top: 1vh
+            font-family: 'Alegreya', serif
 
          .affichage
             display: flex
             justify-content: center
             width: 100%
             align-items: flex-start
-            margin-bottom: 3vh
+            margin-bottom: 6vh
+            margin-top: 3vh
             
             #btn1 
                height: 35px
                width: 55px
-               border-radius: 10px
                margin-right: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
+               background-color: #171717
+               border: solid 2px #171717
+               color: white
                outline: none !important
+               font-family: 'Patrick Hand', cursive
 
             #btn2 
                height: 35px
                width: 90px
-               border-radius: 10px
                margin-right: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
+               border: solid 2px #171717
+               color: #171717
                outline: none !important
+               font-family: 'Patrick Hand', cursive
 
 
             #btn3 
                height: 35px
                width: 110px
-               border-radius: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
+               border: solid 2px #171717
+               color: #171717
                outline: none !important
+               font-family: 'Patrick Hand', cursive
             
          .btn-clique
-            background-color: #00AFB4
+            background-color: #171710
             color: white
 
          .langages
             width: 100%
             top: 0
+            font-family: 'Alegreya', serif
 
             .langage1
                display: inline-block
                width: 100%
-               margin-bottom: 2vh
+               margin-bottom: 1vh
 
             .langage1::after 
                content: ""
@@ -242,7 +274,7 @@ body
             .langage2
                display: inline-block
                width: 100%
-               margin-bottom: 2vh
+               margin-bottom: 1vh
 
             .langage2::after 
                content: ""
@@ -253,12 +285,12 @@ body
                transition: width 2s
 
             .langage2:hover::after 
-               width: 90%
+               width: 100%
 
             .langage3
                display: inline-block
                width: 100%
-               margin-bottom: 2vh
+               margin-bottom: 1vh
 
             .langage3::after 
                content: ""
@@ -269,12 +301,12 @@ body
                transition: width 2s
 
             .langage3:hover::after 
-               width: 70%
+               width: 90%
 
             .langage4
                display: inline-block
                width: 100%
-               margin-bottom: 2vh
+               margin-bottom: 1vh
 
             .langage4::after 
                content: ""
@@ -307,10 +339,13 @@ body
          
             .droite
                float: right
+               font-family: 'Patrick Hand', cursive
+               color: #00AFB4
 
       .container2
          padding-top: 4vh
          padding-bottom: 2vh
+         padding-left: 3vh
          display: flex
          align-items: flex-start
          flex-wrap: wrap
@@ -323,8 +358,9 @@ body
             width: 20vh
             text-align: center
             margin-bottom: 4vh
-            width: 30vh
+            width: 190px
             padding-top: 1vh
+            font-family: 'Alegreya', serif
 
          .experiences
             padding: 2vh
@@ -335,15 +371,19 @@ body
             
             .metier
                color: white
-               font-weight: bold
-               font-size: 20px
+               font-size: 23px
                margin-bottom: 5px
+               font-family: 'Patrick Hand', cursive
             
             .date
                color: #00AFB4
                font-weight: bold
-               font-size: 15px
+               font-size: 17px
                margin-bottom: 5px
+               font-family: 'Patrick Hand', cursive
+            
+            .description
+               font-family: 'Alegreya', serif
 
    
    .section-after-1
@@ -374,11 +414,12 @@ body
          
          .h2-services
             color: #272727
-            font-weight: bold
+            font-family: 'Lobster', cursive
             text-align: center
             margin-bottom: 4vh
             align-items: center
             width: 100%
+            font-size: 40px
          
          .souligne
             background-color: #00AFB4
@@ -413,14 +454,16 @@ body
                height: 5vh
                width: 100%
                font-size: 20px
-               font-weight: bold
                color: #272727
+               font-family: 'Patrick Hand', cursive
+               font-size: 25px
 
             .info2
                display: flex
                justify-content: center
                align-items: center
                text-align: center
+               font-family: 'Alegreya', serif
       
          #section-2-cols:hover
             background-color: #00ADB2
@@ -439,11 +482,12 @@ body
          
          .h2-portfolio
             color: white
-            font-weight: bold
+            font-family: 'Lobster', cursive
             text-align: center
             margin-bottom: 4vh
             align-items: center
             width: 100%
+            font-size: 40px
          
          .souligne
             background-color: #00AFB4
@@ -462,35 +506,34 @@ body
             width: 100%
             align-items: flex-start
             margin-bottom: 6vh
+            font-family: 'Patrick Hand', cursive
             
             #btn4
                height: 35px
                width: 55px
-               border-radius: 10px
                margin-right: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
+               background-color: #171717
+               border: solid 2px #171717
+               color: white
                outline: none !important
 
             #btn5
                height: 35px
                width: 90px
-               border-radius: 10px
                margin-right: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
+               border: solid 2px #171717
+               color: #171717
                outline: none !important
 
             #btn6 
                height: 35px
-               width: 110px
-               border-radius: 10px
-               border: solid 2px #00AFB4
-               color: #00AFB4
+               width: 80px
+               border: solid 2px #171717
+               color: #171717
                outline: none !important
             
             .btn-clique
-               background-color: #00AFB4
+               background-color: #171717
                color: white
          
          .portfolios-img
@@ -498,10 +541,10 @@ body
             width: 70%
 
             #col-p-1
-               height: 30vh
+               height: 46%
             
                .image-1
-                  height: 30vh
+                  height: 100%
                   background-image: url('../img/portfolio(1).jpeg')
                   background-size: 100%
                
@@ -510,10 +553,10 @@ body
                   background-repeat: no-repeat
             
             #col-p-2
-               height: 30vh
+               height: 46%
             
                .image-2
-                  height: 30vh
+                  height: 100%
                   background-image: url('../img/portfolio(2).jpeg')
                   background-size: 100%
 
@@ -522,10 +565,10 @@ body
                   background-repeat: no-repeat
 
             #col-p-3
-               height: 30vh
+               height: 46%
 
                .image-3
-                  height: 30vh
+                  height: 100%
                   background-image: url('../img/portfolio(3).jpeg')
                   background-size: 100%
 
@@ -534,10 +577,10 @@ body
                   background-repeat: no-repeat
 
             #col-p-4
-               height: 30vh
+               height: 46%
 
                .image-4
-                  height: 30vh
+                  height: 100%
                   background-image: url('../img/portfolio(4).jpeg')
                   background-size: 100%
 
@@ -546,10 +589,10 @@ body
                   background-repeat: no-repeat
 
             #col-p-5
-               height: 30vh
+               height: 46%
 
                .image-5
-                  height: 30vh
+                  height: 100%
                   background-image: url('../img/portfolio(5).jpeg')
                   background-size: 100%
                
@@ -558,10 +601,10 @@ body
                   background-repeat: no-repeat
 
             #col-p-6
-               height: 30vh
+               height: 46%
 
                .image-6
-                  height: 30vh
+                  height: 100%
                   background-image: url('../img/portfolio(6).jpeg')
                   background-size: 100%
                
@@ -582,11 +625,12 @@ body
          
          .h2-contact
             color: #272727
-            font-weight: bold
+            font-family: 'Lobster', cursive
             text-align: center
             margin-bottom: 4vh
             align-items: center
             width: 100%
+            font-size: 40px
          
          .souligne
             background-color: #00AFB4
@@ -605,6 +649,7 @@ body
             border: solid 2px #A0A0A0
             font-size: 15px
             padding-left: 1vh
+            outline: none !important
          
          #input2
             width: 45%
@@ -612,6 +657,7 @@ body
             border: solid 2px #A0A0A0
             font-size: 15px
             padding-left: 1vh
+            outline: none !important
 
          #input3
             width: 100%
@@ -619,15 +665,21 @@ body
             border: solid 2px #A0A0A0
             font-size: 15px
             padding-left: 1vh
+            padding-top: 1.5vh
+            outline: none !important
          
          #button4
-            width: 30%
+            width: 160px
             height: 8vh
             background-color: #00ADB2
             color: white
             border: 0px
             font-weight: bold
             font-size: 15px
+            outline: none !important
+         
+         #button4:hover
+            background-color: #019193
       
       #section-4-col-2
          display: flex
@@ -677,7 +729,7 @@ body
             background-color: #00AFB4
             height: 6vh
             width: 6vh
-            border-radius: 25px
+            border-radius: 50px
             color: white
             display: flex
             flex-wrap: wrap
@@ -686,14 +738,18 @@ body
             font-size: 20px
             line-height: 0
             padding-top: 1px
-         
+
          #iiii:hover
             color: #00afb4
             background-color: white
             padding-top: 1px
 
+         a:hover
+            text-decoration: none
+
+
       .copyright
-         color: white
+         color: black
          font-size: 15px
          background-color: #0f0f0f
          width: 100%
@@ -702,3 +758,98 @@ body
          flex-wrap: wrap
          justify-content: center
          align-items: center
+
+@media (max-width: 700px)
+
+   header
+      height: 10vh !important
+
+   #header-1-col-1
+      display: none !important
+
+   .header-1
+      background-color: #00afb4 !important
+      height: 10vh !important
+
+   .carousel
+      display: none
+
+   .section-1
+      height: 50vh !important
+
+   #section-1-col-1
+      padding-top: 0vh !important
+      padding-bottom: 0vh !important
+      height: 37vh !important
+      
+   #section-1-col-2
+      padding-top: 0vh !important
+      padding-bottom: 0vh !important
+      padding-right: 0vh !important
+      height: 45vh !important
+
+   #div-2-col-1
+      padding: 0vh !important
+      
+   .col-1-img
+      height: 25vh !important
+      width: 25vh !important
+      top: 4.5vh !important
+      left: 15vh !important
+
+   .col-1-back
+      height: 25vh !important
+      width: 25vh !important
+      top: 7vh !important
+      left: 12.5vh !important
+
+   .container1
+      padding-right: 0 !important
+      padding-bottom: 6vh
+
+   .container2
+      padding-left: 0 !important
+      margin-left: -8vh !important
+      margin-right: -8vh !important
+      margin-top: 5vh !important
+
+   .section-2
+     height: 180vh !important
+   
+   .section-3
+      height: 220vh !important
+
+      #col-p-1
+         height: 40% !important
+         margin-bottom: 3vh !important
+      #col-p-2
+         height: 40% !important
+         margin-bottom: 3vh !important
+      #col-p-3
+         height: 40% !important
+         margin-bottom: 3vh !important
+      #col-p-4
+         height: 40% !important
+         margin-bottom: 3vh !important
+      #col-p-5
+         height: 40% !important
+         margin-bottom: 3vh !important
+      #col-p-6
+         height: 40% !important
+         margin-bottom: 3vh !important
+   
+   .section-4
+      height: 156vh !important
+      padding-left: 5vh !important
+      padding-right: 5vh !important
+
+   
+   #section-4-col-2
+      margin-top: 3vh
+
+   .donne1
+      width: 100% !important
+   
+
+   .footer
+      width: 50% !important

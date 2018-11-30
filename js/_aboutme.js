@@ -16,10 +16,11 @@ all.addEventListener("click", function () {
       document.querySelectorAll(".skills")[i].style.display="initial"; }
       all.classList.add("btn-clique")
       all.style.color="white"
+      all.style.backgroundColor="#171717"
       langage.classList.remove("btn-clique")
-      langage.style.color="#00AFB4"
+      langage.style.color="#171717"
       design.classList.remove("btn-clique")
-      design.style.color="#00AFB4"
+      design.style.color="#171717"
 })
 
 
@@ -36,10 +37,10 @@ design.addEventListener("click", function () {
          document.querySelectorAll(".skills")[i].style.display="initial";
          design.classList.add("btn-clique")
          design.style.color="white"
-         all.classList.remove("btn-clique")
-         all.style.color="#00AFB4"
+         all.style.backgroundColor="#DCDCDC"
+         all.style.color="#171717"
          langage.classList.remove("btn-clique")
-         langage.style.color="#00AFB4"
+         langage.style.color="#171717"
       } 
       else {
          document.querySelectorAll(".skills")[i].style.display="none"; }
@@ -58,10 +59,10 @@ langage.addEventListener("click", function () {
          document.querySelectorAll(".skills")[i].style.display="initial";
          langage.classList.add("btn-clique")
          langage.style.color="white"
-         all.classList.remove("btn-clique")
-         all.style.color="#00AFB4"
+         all.style.backgroundColor="#DCDCDC"
+         all.style.color="#171717"
          design.classList.remove("btn-clique")
-         design.style.color="#00AFB4"
+         design.style.color="#171717"
       } 
       else {
          document.querySelectorAll(".skills")[i].style.display="none"; }
