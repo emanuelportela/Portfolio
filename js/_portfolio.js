@@ -1,7 +1,6 @@
 // PORTFOLIO
 
 
-// Bouton All
 let all1 = document.getElementById('btn4');
 let design1 = document.getElementById('btn5');
 let site = document.getElementById('btn6');

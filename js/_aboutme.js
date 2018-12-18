@@ -6,7 +6,7 @@ let all = document.getElementById('btn1');
 let design = document.getElementById('btn2');
 let langage = document.getElementById('btn3');
 
- 
+
 
 // Bouton all
 all.addEventListener("click", function () { 

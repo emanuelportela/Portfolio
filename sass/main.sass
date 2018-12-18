@@ -1,6 +1,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss'
 
-
+html 
+   scroll-behavior: smooth
 body
    header
       height: 100vh
@@ -12,7 +13,8 @@ body
          width: 100%
          background-color: black
          position: fixed
-         z-index: 3
+         z-index: 4
+         top: 0
          
          #header-1-col-1
             height: 10vh
@@ -26,7 +28,50 @@ body
             display: flex
             align-items: center
             font-family: 'Ubuntu Condensed', sans-serif
+
+            #burger
+               width: 10%
+               height: 100%
+               background-color: white
+               border-radius: 10px
+               display: none
+               background-image: url('../img/Hamburger_icon.svg.png')
+               background-size: 80%
+               background-repeat: no-repeat
+               background-position-x: 50%
+               background-position-y: 50%
             
+            .burger-1
+               background-color: rgba(0,175,180,0.8)
+               margin-top: 40vh !important
+               height: 50vh
+               width: 477px
+               margin-left: 0px
+               margin-right: -30px
+               display: none
+               align-items: center
+               flex-wrap: wrap
+               justify-content: center
+               border: solid 2px #009394
+               border-bottom-left-radius: 10px
+               border-bottom-right-radius: 10px
+                  
+               .b-1
+                  height: 20%
+                  width: 100%
+                  font-family: 'Lobster', cursive
+                  display: flex
+                  align-items: center
+                  justify-content: center
+
+                  .b-2
+                     text-decoration: none
+                     color: #FFFFFF
+                     font-size: 35px
+               
+                  .b-2:hover
+                     color: #00ADB2
+
             #col-h-2
                display: flex
                justify-content: center
@@ -39,10 +84,17 @@ body
                   color: white
 
             #col-h-2:hover
-               color: #219EC8
+               color: #00ADB2
 
                a:hover
-                  color: #219EC8
+                  color: #00ADB2
+
+   .image-cachee
+      height: 0vh
+      background-image: url("../img/DSC00848.jpg")
+      background-size: 136vh
+      background-position-x: 20%
+      background-position-y: 100%
 
    .carousel
       height: 90vh
@@ -139,9 +191,9 @@ body
          .col-1-img
             height: 45vh
             width: 45vh
-            background-image: url('../img/IMG-20180105.jpg')
-            background-size: 150%
-            background-position-x: 50%
+            background-image: url('../img/DSC00873.jpg')
+            background-size: 180%
+            background-position-x: 30%
             position: absolute
             top: 20vh
             left: 10vh
@@ -160,7 +212,7 @@ body
          padding: 25vh 4vh
          text-align: justify
    
-   .section-1-div-2
+   #section-1-div-2
       padding: 10vh
       background-color: #515151
 
@@ -547,9 +599,10 @@ body
                   height: 100%
                   background-image: url('../img/portfolio(1).jpeg')
                   background-size: 100%
+                  transition: transform .3s
                
                .image-1:hover
-                  background-size: 95%
+                  transform: scale(1.1)
                   background-repeat: no-repeat
             
             #col-p-2
@@ -559,9 +612,10 @@ body
                   height: 100%
                   background-image: url('../img/portfolio(2).jpeg')
                   background-size: 100%
+                  transition: transform .3s
 
                .image-2:hover
-                  background-size: 95%
+                  transform: scale(1.1)
                   background-repeat: no-repeat
 
             #col-p-3
@@ -571,9 +625,10 @@ body
                   height: 100%
                   background-image: url('../img/portfolio(3).jpeg')
                   background-size: 100%
+                  transition: transform .3s
 
                .image-3:hover
-                  background-size: 95%
+                  transform: scale(1.1)
                   background-repeat: no-repeat
 
             #col-p-4
@@ -583,9 +638,10 @@ body
                   height: 100%
                   background-image: url('../img/portfolio(4).jpeg')
                   background-size: 100%
+                  transition: transform .3s
 
                .image-4:hover
-                  background-size: 95%
+                  transform: scale(1.1)
                   background-repeat: no-repeat
 
             #col-p-5
@@ -595,9 +651,10 @@ body
                   height: 100%
                   background-image: url('../img/portfolio(5).jpeg')
                   background-size: 100%
+                  transition: transform .3s
                
                .image-5:hover
-                  background-size: 95%
+                  transform: scale(1.1)
                   background-repeat: no-repeat
 
             #col-p-6
@@ -607,9 +664,10 @@ body
                   height: 100%
                   background-image: url('../img/portfolio(6).jpeg')
                   background-size: 100%
+                  transition: transform .3s
                
                .image-6:hover
-                  background-size: 95%
+                  transform: scale(1.1)
                   background-repeat: no-repeat
 
    .section-4
@@ -765,17 +823,60 @@ body
       height: 10vh !important
 
    #header-1-col-1
+      width: 40%
+      padding-top: 0
+
+   [alt="logo"]
+      width: 75% !important
+      margin-top: -1vh
+
+   #col-h-2
       display: none !important
+   
+   #burger
+      display: initial !important
+      width: 7vh !important
+      height: 6vh !important
+      position: absolute
+      top: -8vh
+      right: 0vh
+      scroll-behavior: smooth
 
    .header-1
-      background-color: #00afb4 !important
+      background-color: black !important
       height: 10vh !important
+
+   .image-cachee
+      height: 91vh !important
+      margin-top: 9.5vh !important
+
+      .blacko
+         height: 100.5vh 
+         width: 100%
+         background-color: rgba(0,0,0,0.6)
+         position: absolute
+         top: 0vh
+         left: 0vh
+         z-index: 1
+
+      .iam
+         position: absolute
+         top: 93.5vh
+         left: 2vh
+         color: white
+         z-index: 3
+         font-size: 31px
+         font-family: 'Lobster', cursive
+      
+         .span-blue
+            color: #00ADB2
 
    .carousel
       display: none
 
    .section-1
       height: 50vh !important
+      margin-top: 90vh !important
 
    #section-1-col-1
       padding-top: 0vh !important
@@ -849,7 +950,6 @@ body
 
    .donne1
       width: 100% !important
-   
 
    .footer
       width: 50% !important
